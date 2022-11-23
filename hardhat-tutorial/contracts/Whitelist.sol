@@ -20,7 +20,7 @@ contract Whitelist {
     }
 
     /* addAddressToWhitelist - この関数は、送信者のアドレスをホワイトリストに追加する。 */
-    function addAddressWhitelist() public {
+    function addAddressToWhitelist() public {
         // ユーザーがすでにホワイトリストに登録されているかどうかをチェックする
         require(!whitelistedAddresses[msg.sender], "Sender has already been whitelisted");
         // numAddressesWhitelisted < maxWhitelistedAddresses であるかどうかを調べ、もしそうでなければエラーを投げる。
